@@ -1,0 +1,26 @@
+<h1>
+	Componente de login fdp!
+</h1>
+
+<div style="margin:0 auto; position:relative; text-align:center;">
+<div style="margin:0 auto; width:268px;">
+
+<form [ngFormModel]="loginForm" (ngSubmit)="onSubmit(loginForm.value)">
+
+  <input type="email" #email="ngForm" [ngFormControl]="loginForm.controls['email']" id="email" placeholder="email">
+  <input type="text" #login="ngForm" [ngFormControl]="loginForm.controls['login']"  id="login" placeholder="login">
+
+  <input type="password" #password="ngForm" [ngFormControl]="loginForm.controls['password']" id="password" placeholder="senha">
+
+  <button type="submit">Começar</button>
+
+
+</form>
+
+</div>
+
+<h1> valeu! </h1>
+
+</div>
+
+
