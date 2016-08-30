@@ -1,8 +1,17 @@
-<p> O que comove você? </p>
+<!--imprimindo variavel title do component utilizando Interpolation-->
+<p style="margin:0 auto; position:relative; text-align:center;"> {{ title }} </p>
 
-<a href="/about">
-<img src="https://http.cat/405.jpg" width="145" height="126">
+<div style="margin:0 auto; position:relative; text-align:center;">
+<div style="margin:0 auto;" >
 
-</a>
+<!--property binding [src] -->
+<img [src]="urlImg1" (click)="clickLink(1)" width="400" height="400"
+ [routerLink]="['/login']" [routerLinkActive]="['router-link-active']"
+ [routerLinkActiveOptions]="{exact:true}">
 
-<img src="https://http.cat/100.jpg" width="145" height="126">
+<img [src]="urlImg2" (click)="clickLink(2)" width="400" height="400"
+  [routerLink]="['/']" [routerLinkActive]="['router-link-active']"
+  [routerLinkActiveOptions]="{exact:true}">
+
+</div>
+</div>
