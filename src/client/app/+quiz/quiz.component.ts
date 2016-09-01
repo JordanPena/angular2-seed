@@ -17,6 +17,7 @@ export class QuizComponent {
   constructor(quizService: QuizService){
 
   }
+  //onQuiz(){  }
 
   onAlerta(){
       console.log('chamou');

@@ -1,0 +1,17 @@
+<!--imprimindo variavel title do component utilizando Interpolation-->
+<p style="margin:0 auto; position:relative; text-align:center;"> {{ title }} </p>
+
+<div style="margin:0 auto; position:relative; text-align:center;">
+<div style="margin:0 auto;" >
+
+<!--property binding [src] -->
+<img [src]="urlImg1" (click)="clickLink(1)" width="400" height="400"
+ [routerLink]="['/pergunta1/2']" [routerLinkActive]="['router-link-active']"
+ [routerLinkActiveOptions]="{exact:true}">
+
+<img [src]="urlImg2" (click)="clickLink(2)" width="400" height="400"
+  [routerLink]="['/']" [routerLinkActive]="['router-link-active']"
+  [routerLinkActiveOptions]="{exact:true}">
+
+</div>
+</div>

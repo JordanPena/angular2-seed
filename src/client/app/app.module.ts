@@ -15,11 +15,12 @@ import { SharedModule } from './shared/shared.module';
 import { QuizComponent } from './+quiz/index';
 import { LoginComponent} from './+login/index';
 import { Pergunta1Component } from './+pergunta1/index';
+import { Pergunta12Component } from './+pergunta1-2/index';
 
 
 @NgModule({
   imports: [BrowserModule, HttpModule, RouterModule.forRoot(routes), AboutModule, HomeModule, ReactiveFormsModule, SharedModule.forRoot()],
-  declarations: [AppComponent, QuizComponent, LoginComponent, Pergunta1Component],
+  declarations: [AppComponent, QuizComponent, LoginComponent, Pergunta1Component, Pergunta12Component],
   providers: [
   {
     provide: APP_BASE_HREF,
